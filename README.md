@@ -52,4 +52,8 @@ Statistics for eyes:
    1382 Black, 
      87 Gray.
 
+# Experimental Results
+
+<img width="677" height="333" alt="image" src="https://github.com/user-attachments/assets/ef2dc1cb-568b-439b-a333-ac5d5d13b3bf" />
+<img width="716" height="526" alt="image" src="https://github.com/user-attachments/assets/7aa5b19c-3ebf-4801-9d06-45532283a452" />
 
