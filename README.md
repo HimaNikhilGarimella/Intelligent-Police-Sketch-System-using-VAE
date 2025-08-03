@@ -22,41 +22,34 @@ https://www.idoc.state.il.us/subsections/search/pub_showfront.asp?idoc=
 https://www.idoc.state.il.us/subsections/search/pub_showside.asp?idoc=
 
 Statistics for hair:
-  43305 Black
-  17371 Brown
-   2887 Blonde or Strawberry
-   2539 Gray or Partially Gray
-    740 Red or Auburn
-    624 Bald
-    396 Not Available
-    209 Salt and Pepper
-     70 White
-      7 Sandy
-      1 Unknown
+  43305 Black, 
+  17371 Brown, 
+   2887 Blonde or Strawberry, 
+   2539 Gray or Partially Gray, 
+    740 Red or Auburn, 
+    624 Bald, 
+    209 Salt and Pepper, 
+     70 White, 
+      7 Sandy,  
 
 Statistics for sex:
-  63409 Male
+  63409 Male, 
    4740 Female
 
 Statistics for race:
-  37991 Black
-  20992 White
-   8637 Hispanic
-    235 Asian
-    104 Amer Indian
-     94 Unknown
+  37991 Black, 
+  20992 White, 
+   8637 Hispanic, 
+    235 Asian, 
+    104 Amer Indian, 
      92 Bi-Racial
-      4 
 
 Statistics for eyes:
-  51714 Brown
-   7808 Blue
-   4259 Hazel
-   2469 Green
-   1382 Black
-    420 Not Available
-     87 Gray
-      9 Maroon
-      1 Unknown
+  51714 Brown, 
+   7808 Blue, 
+   4259 Hazel, 
+   2469 Green, 
+   1382 Black, 
+     87 Gray.
 
 
