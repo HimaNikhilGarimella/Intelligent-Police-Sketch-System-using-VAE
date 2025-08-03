@@ -21,11 +21,6 @@ https://www.idoc.state.il.us/subsections/search/inms_print.asp?idoc=
 https://www.idoc.state.il.us/subsections/search/pub_showfront.asp?idoc=
 https://www.idoc.state.il.us/subsections/search/pub_showside.asp?idoc=
 
-front.7z contains mugshots from the front
-side.7z contains mugshots from the side
-inmates.7z contains all the html files
-csv contains the html files converted to CSV
-
 Statistics for hair:
   43305 Black
   17371 Brown
