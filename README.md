@@ -21,34 +21,10 @@ https://www.idoc.state.il.us/subsections/search/inms_print.asp?idoc=
 https://www.idoc.state.il.us/subsections/search/pub_showfront.asp?idoc=
 https://www.idoc.state.il.us/subsections/search/pub_showside.asp?idoc=
 
-paste <(cat ids.txt | sed 's/^/http:\/\/www.idoc.state.il.us\/subsections\/search\/pub_showside.asp\?idoc\=/g') <(cat ids.txt| sed 's/^/  out=/g' | sed 's/$/.jpg/g') -d '\n' > showside.txt 
-paste <(cat ids.txt | sed 's/^/http:\/\/www.idoc.state.il.us\/subsections\/search\/pub_showfront.asp\?idoc\=/g') <(cat ids.txt| sed 's/^/  out=/g' | sed 's/$/.jpg/g') -d '\n' > showfront.txt      
-paste <(cat ids.txt | sed 's/^/http:\/\/www.idoc.state.il.us\/subsections\/search\/inms_print.asp\?idoc\=/g') <(cat ids.txt| sed 's/^/  out=/g' | sed 's/$/.html/g') -d '\n' > inmates_print.txt 
-
-aria2c -i ../inmates_print.txt -j4 -x4 -l ../log-$(pwd|rev|cut -d/ -f 1|rev)-$(date +%s).txt
-
-Then use htmltocsv.py to get the csv. Note that the script is very poorly written and may have errors. It also doesn't do anything with the warrant-related info, although there are some commented-out lines which may be relevant.
-Also note that it assumes all the HTML files are located in the inmates directory., and overwrites any csv files in csv if there are any.
-
 front.7z contains mugshots from the front
 side.7z contains mugshots from the side
 inmates.7z contains all the html files
 csv contains the html files converted to CSV
-
-The reason for packaging the images is that many torrent clients would otherwise crash if attempting to load the torrent.
-
-All CSV files contain headers describing the nature of the columns. For person.csv, the id is unique. For marks.csv and sentencing.csv, it is not.
-Note that the CSV files use semicolons as delimiters and also end with a trailing semicolon. If this is unsuitable, edit the arr2csvR function in htmltocsv.py.
-
-There are 68149 inmates in total, although some (a few hundred) are marked as "Unknown"/"N/A"/"" in one or more fields.
-
-The "height" column has been processed to contain the height in inches, rather than the height in feet and inches expressed as "X ft YY in."
-Some inmates were marked "Not Available", this has been replaced with "N/A".
-Likewise, the "weight" column has been altered "XXX lbs." -> "XXX". Again, some are marked "N/A".
-
-The "date of birth" column has some inmates marked as "Not Available" and others as "". There doesn't appear to be any pattern. It may be related to the institution they are kept in. Otherwise, the format is MM/DD/YYYY.
-
-The "weight" column is often rounded to the nearest 5 lbs.
 
 Statistics for hair:
   43305 Black
